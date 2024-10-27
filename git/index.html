@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma Intervalos</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Importando jQuery -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Importando Tailwind -->
+</head>
+<body class="flex items-center justify-center min-h-screen bg-indigo-500">
+    <div class="p-8 bg-white rounded-lg border-4">
+        <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 mb-8 text-center">
+            Soma de Intervalos
+        </h1>
+
+        <div class="space-y-4">
+            <input id="inputInicio" type="number" placeholder="Digite o início do intervalo" class="w-full p-4 border-gray-300 rounded">
+            <input id="inputFinal" type="number" placeholder="Digite o final do intervalo" class="w-full p-4 border-gray-300 rounded">         
+        </div>  
+
+        <p id="validacao" class="text-red-500 mt-2"></p> <!-- Corrigido para 'validacao' -->
+
+        <button id="button" class="mt-6 w-full p-6 bg-green-500 text-white rounded-lg hover:bg-green-600">
+            Calcular
+        </button>
+        
+        <p id="resultado" class="mt-4 text-lg"></p>
+    </div> 
+
+    <script src="script.js"></script> <!-- Importando o script JavaScript -->  
+</body>    
+</html>
